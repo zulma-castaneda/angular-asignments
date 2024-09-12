@@ -1,0 +1,4 @@
+<button (click)="toggleShowParagraph()" >Display Details</button>
+<p *ngIf="showParagraph">Secret Password = tuna</p>
+<p  *ngFor="let click of clicksArray" [ngStyle]="{backgroundColor:  click>=5? 'blue':'white'}" [ngClass]="{color: click>=5}">{{click}}</p>
+

@@ -1,0 +1,13 @@
+<form [formGroup]="projectForm" (ngSubmit)="onSaveProject()">
+  <label for="project-name">Poject Name:</label>
+  <input type="text" name="project-name" id="" formControlName="projectName" />
+  <label for="mail">Mail:</label>
+  <input type="text" name="mail" id="" formControlName="mail" />
+  <label for="mail">Project Status:</label>
+  <select name="status" id="" formControlName="projectStatus">
+    <option *ngFor="let status of statuses" [value]="status">
+      {{ status }}
+    </option>
+  </select>
+  <button type="submit">Create Project</button>
+</form>

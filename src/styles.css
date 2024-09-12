@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.highlight{
+  background-color: greenyellow;
+}
+
+h2{
+  padding-top: 30px;
+}
+
+.active{
+  font-weight: bold;
+}
